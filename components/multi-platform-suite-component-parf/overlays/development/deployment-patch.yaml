@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-platform-suite-component-parf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-platform-i-5-tenant/multi-platform-suite-application-szfm/multi-platform-suite-component-parf@sha256:6d4c0149023e814dff5cbdd7872e05337dbf189bece8572d6d863cf0225240d8
+        name: my-go
+        resources: {}
+status: {}
